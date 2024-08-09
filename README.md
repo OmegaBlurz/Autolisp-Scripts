@@ -13,3 +13,20 @@ e.g.
 
 (load "C:\\Example\\Filepath\\ZoomSaveClose.lsp")
 ```
+
+## Scripts
+
+- Funtional
+  - ZoomSave
+  - ZoomSaveClose
+  - SetLineTypeScales
+  - SetLayoutName
+  - ChangeLayoutName
+  - InvertLayers
+  - DIMDEL
+  - delwipeout
+  - hatchdel
+
+- Non-Functional
+  - LayerFreeze
+  - SetToLayer0
