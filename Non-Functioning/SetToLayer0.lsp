@@ -1,0 +1,18 @@
+(defun c:SetToLayer0 (/ ss i ename)
+  (prompt "\nSelect objects to set to Layer 0: ")
+  (setq ss (ssget))
+  (if ss
+    (progn
+      (setq i 0)
+      (while (< i (sslength ss))
+        (setq ename (ssname ss i))
+        (setq obj (vlax-ename->vla-object ename))
+        (vla-put-Layer obj "0")
+        (setq i (1+ i))
+      )
+      (princ "\nObjects set to Layer 0.")
+    )
+    (prompt "\nNo objects selected.")
+  )
+  (princ)
+)
