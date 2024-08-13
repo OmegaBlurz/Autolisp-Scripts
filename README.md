@@ -4,7 +4,7 @@ A collection of my autolisp scripts
 
 ## Usage
 
-For easiest use link to .lsp file within acad{year}doc.lsp located within "{Autocad Installation Folder}\Support\en-us\\" by pasting the filepaths within a load function
+For easiest use load .lsp file within acad{year}doc.lsp located within "{Autocad Installation Folder}\Support\en-us\\" by pasting each individual filepath within a load function.
 
 e.g.
 
