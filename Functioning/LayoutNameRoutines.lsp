@@ -2,7 +2,7 @@
 (defun c:SetLayoutName ()
   (setq *layoutName* (getstring "\nEnter layout name: "))
   ;; Construct the path to the user's temp folder
-  (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.txt") "w"))
+  (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.tmp") "w"))
   (write-line *layoutName* tempFile)
   (close tempFile)
   (princ (strcat "\nLayout name set to: " *layoutName*))
@@ -12,7 +12,7 @@
 ;; Script 2: Change Current Layout to Designated Name
 (defun c:ChangeLayoutName ()
   ;; Construct the path to the user's temp folder
-  (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.txt") "r"))
+  (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.tmp") "r"))
   (if tempFile
     (progn
       (setq *layoutName* (read-line tempFile))
