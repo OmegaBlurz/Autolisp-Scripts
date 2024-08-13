@@ -30,3 +30,9 @@
   )
   (princ)
 )
+
+;; Alias for SetLayoutName
+(defun c:LSET () (c:SetLayoutName))
+
+;; Alias for ChangeLayoutName
+(defun c:LCHG () (c:ChangeLayoutName))
