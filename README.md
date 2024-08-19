@@ -1,6 +1,6 @@
 # Autolisp Scripts
 
-A collection of my autolisp scripts
+A collection of my and others autolisp scripts that I use.
 
 ## Usage
 
