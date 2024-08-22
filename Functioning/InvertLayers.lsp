@@ -1,4 +1,4 @@
-(defun c:INVERTLAYERVISIBILITY ()
+(defun c:InvertLayerVisibility ()
   (vl-load-com)
   (setq doc (vla-get-ActiveDocument (vlax-get-acad-object)))
   (setq layers (vla-get-Layers doc))
@@ -28,4 +28,5 @@
   (princ)
 )
 
-;; To execute the function, type INVERTLAYERVISIBILITY in the command line
+;; Alias for SetLayoutName
+(defun c:INVERLAY () (c:InvertLayerVisibility))
