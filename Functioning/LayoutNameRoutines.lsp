@@ -1,5 +1,5 @@
 ;; Script 1: Designate Layout Name
-(defun c:SetLayoutName ()
+(defun c:SetLayoutNameVar ()
   (setq *layoutName* (getstring "\nEnter layout name: "))
   ;; Construct the path to the user's temp folder
   (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.txt") "w"))
@@ -32,7 +32,7 @@
 )
 
 ;; Alias for SetLayoutName
-(defun c:LSET () (c:SetLayoutName))
+(defun c:LSETVAR () (c:SetLayoutNameVar))
 
 ;; Alias for ChangeLayoutName
 (defun c:LCHG () (c:ChangeLayoutName))
