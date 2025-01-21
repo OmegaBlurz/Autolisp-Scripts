@@ -2,7 +2,7 @@
 ; When invoked, it zooms to extents, performs a quick save, and closes the drawing. 
 ; If the drawing is untitled, it prompts the user to choose the save location and file name.
 
-(defun c:ZCLOSE ()
+(defun c:ZoomSaveClose ()
   ; Zoom to the extents of the drawing
   (command "_.ZOOM" "_E")
 
@@ -12,3 +12,6 @@
   ; Close the drawing
   (command "_CLOSE")
 )
+
+;; Alias for ZoomSaveClose
+(defun c:ZCLOSE () (c:ZoomSaveClose))
