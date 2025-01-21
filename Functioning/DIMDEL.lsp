@@ -1,4 +1,4 @@
-(defun c:DIMDEL (/ ss i sn name lst)
+(defun c:DimensionDelete (/ ss i sn name lst)
   (vl-load-com)
 ;;;        ------ Tharwat 15. June. 2012 -----      ;;;
 ;;; codes to delete all dimensions entities in the  ;;;
@@ -24,3 +24,6 @@
   (if ss (vla-regen acdoc AcAllviewports))
   (princ)
 )
+
+;; Alias for Dimension Delete
+(defun c:DIMDEL () (c:DimensionDelete))
