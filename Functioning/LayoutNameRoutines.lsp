@@ -5,7 +5,7 @@
   (setq tempFile (open (strcat (getenv "TEMP") "\\layoutname.txt") "w"))
   (write-line *layoutName* tempFile)
   (close tempFile)
-  (princ (strcat "\nLayout name set to: " *layoutName*))
+  (princ (strcat "\nStored layout name variable set to: " *layoutName*))
   (princ)
 )
 
