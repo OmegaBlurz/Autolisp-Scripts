@@ -28,4 +28,7 @@
  )
  (princ)
  ) ;end
- [/code]
+
+
+;; Alias for DelWipeouts
+(defun c:DELWIPE () (c:delwipeout:deleteBlockWipeouts))
