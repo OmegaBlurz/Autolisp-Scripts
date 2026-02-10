@@ -1,4 +1,4 @@
-(defun c:SETLTS ()
+(defun c:SetLinetypeScales ()
   (setvar "MSLTSCALE" 0)  ;Disables scaling of linetypes in model space relative to viewport scale
   (setvar "PSLTSCALE" 0)  ;Disables scaling of linetypes in paper space relative to viewport scale
   (setvar "LTSCALE" 1)    ;Sets the global linetype scale factor to 1
