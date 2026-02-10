@@ -8,6 +8,8 @@
 ;      Changed program to work from a keyword on the command line
 ;   2024-01-01 
 ;      Modified to allow multiple block selection
+;   2026-02-10
+;      Added new alias
 ;*******************************************************************************
 (defun d_FixBlock (/             ssBlocks       ; Block selection set
                    iCount        ; Counter for selection set
@@ -297,4 +299,5 @@
 ;*******************************************************************************
 
 (defun C:FIXBLOCK () (d_FixBlock))
+(defun C:SetToLayer0 () (d_FixBlock))
 (princ)
